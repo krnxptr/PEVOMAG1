@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    background: #ffffff;
+}
+
+section .fent {
+    width: 100%;
+}
+.fent{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    height: 10rem;
+    width: 100%;
+    transition: all 0.8s;
+}
+
+.header-scrolled{
+    background: black; 
+    
+}
+
+/* .header-scrolled-back{
+    animation: fadeOut 1s;
+    
+} */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes fadeOut {
+  0% { background: rgba(0,0,0, 70%) }
+  100% { background: rgba(0,0,0, 0%) }
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    font-size: 150%;
+    letter-spacing: 0.13rem;
+  
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    padding: 2rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color: blue;
+}
+header figure img {
+    height: 100%;
+    width: 12rem;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+header figure{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+}
+
+header figure h1{
+    color: rgb(187, 146, 12);
+    font-size: 3rem;
+    font-family: "Italiana", sans-serif;
+    margin: auto;
+}
+
+
+
+/* Zoli CSS */
+
+/* A menüt alapvetően rejtjük */
+
+
+  .hidden {
+    display: none;
+    padding: 0px, 0px;
+    transition: all 0.8s
+}  
+
+/* About menü stílusai */
+.about-menu {
+    list-style-type: none;
+    color:  rgb(187, 146, 12);
+    background: rgb(0, 0, 0,70%) ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Fő tengelyen való középre igazítás */
+    align-items: center; /* Átlós tengelyen való középre igazítás */
+    position: absolute;
+    transition: all 0.8s;
+    width: 100%;
+}
+.about-menu li a {
+    text-decoration: none;
+    color: rgb(187, 146, 12);
+    text-align: center;
+}
+.about-menu li{
+    text-decoration: none;
+    color: rgb(187, 146, 12);
+    padding: 13px;
+    text-align: center;
+}
+
+.about-menu li a:hover {
+    color: rgb(129, 102, 11);
+    padding: 0px, 0px;
+}
+.menu{
+    position: relative;
+}
+
+/**/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.social h5{
+    color: blue;
+    font-size: 150%;
+    letter-spacing: 0.22rem;
+    padding-bottom: 15%;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+footer .news form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer .news input{
+    width: 100%;
+    border: none;
+    padding: 9%;
+    margin: 5%;
+    color:blue;
+}
+
+footer .news button{
+    width: 118%;
+    border: none;
+    color:black;
+    color: white;
+    padding: 9%;
+    margin: 5%;
+}
+
+footer .news button:hover{
+    width: 120%;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 9%;
+    margin: 5%;
+}
+
+footer .news .gombi h1{
+    color: black;
+    font-size: 1rem;
+}
+
+footer .news .gombi:hover h1{
+    color: black;
+}
+
+footer .social{
+    text-align: center;
+
+}
+footer .social ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+footer .social ul li{
+    text-align: center;
+    padding: 0rem 2rem;
+}
+
+i{
+    font-size: 250%;
+    text-align: center;
+}
+footer .social ul li a{
+    color: rgb(255, 255, 255);
+}
+
+footer .social ul li a:hover{
+    color: red;
+}
+footer .news h4{
+    color: blue;
+    font-size: 1.4rem;
+}
+
+footer .news input, footer .news button{
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* body */
+
+.sec{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.cim {
+    position: absolute;
+    text-align: center;
+    margin-top: 12rem;
+}
+
+.cim h1 {
+    padding: 2rem;
+    color: white;
+    font-size: 500%;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-family: "Lora", serif;
+}
+
+.szoveg {
+    position: absolute;
+    margin: 25%;
+    margin-top: 30%;
+    color: white;
+    font-family: "Lora", serif;
+    text-align: center;
+}
+
+.szoveg h2{
+    font-family: "Lora", serif;
+    font-weight: 50;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+
+}
+
+section .background-img {
+    width: 100%;
+    overflow: hidden;
+    
+}
+section .background-img .img{
+    width: 100%;
+    filter: brightness(0.4);
+    animation: fadeIn 0s;
+
+}
+
+.tartalom {
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+
+    
+}
+section .video .apple {
+  width: 1450px; /* Added unit for width */
+  height: 50rem;
+  z-index: -1;
+  position: absolute;
+  animation: fadeIn 0.7s;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+ display: flex;
+}
+
+
+
+.tartalom .maps-szoveg   {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    font-family: "Lora", serif;
+    font-weight: 50;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+}
+/* tartalom2 */
+
+.tartalom2{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.orderfromus {
+    position: absolute;
+    text-align: center;
+    margin-top: 12rem;
+}
+
+.orderfromus h1 {
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+    font-family: "Lora", serif;
+    letter-spacing: 0.25rem;
+    font-weight: 100;
+}
+
+
+section .background-img-menu {
+    width: 100%;
+    overflow: hidden;
+    
+}
+section .background-img-menu .img-menu{
+    width: 100%;
+    filter: brightness(0.7);
+    animation: fadeIn 0s;
+
+}
+
+/**/
+
+.ordernow {
+    position: absolute;
+    color: white;
+    font-family: "Lora", serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.ordernow button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 90;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem ;
+    width: 20rem;
+    margin-top: 160%;
+    background:white;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 5rem;
+}
+
+
+.ordernow button:hover{
+    color: red;
+    background: blue;
+
+}
+
+.ordernowgomb span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .ordernowgomb span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+  }
+  
+  .ordernowgomb:hover span {
+    padding-right: 25px;
+  }
+  
+  .ordernowgomb:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.etlapGomb{
+    font-size: 1.4rem;
+
+}
+.etlapGomb img{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    
+}
+
+
+
+@media (max-width: 1024px){
+    .fent{
+        position: static;
+    }
+    header figure a img{
+        display: block;
+        margin: auto;
+    }
+    header{
+        display: block;
+        width: auto;
+        height: auto;
+        background: black;
+    }
+    header figure {
+        justify-content: center;
+        padding: 0rem;
+    }
+
+    .header-scrolled{
+        background: rgba(0,0,0, 100%) 
+        
+    }
+    nav .menu{
+        margin-bottom: 2rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    header nav{
+        font-size: 100%;
+        letter-spacing: 0.13rem;
+        margin-right: 0rem;
+        margin-top: 1rem;
+        padding: 0rem;
+    }
+    header nav ul li {
+        padding: .5rem;
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer .news{
+        padding-bottom: 5rem;
+        padding-top: 2rem;
+    }
+    footer .social{
+        padding-bottom: 2rem;
+    }
+
+    .cim {
+        position: absolute;
+        text-align: center;
+        margin-top: 5rem;
+    }
+    
+    .cim h1 {
+        padding: 2rem;
+        color: rgb(187, 146, 12);
+        font-size: 200%;
+        text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    }
+
+    .szoveg {
+        position: absolute;
+        margin: 15%;
+        margin-top: 66%;
+        color: white;
+        font-family: "Lora", serif;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .szoveg h2{
+        font-family: "Lora", serif;
+        font-weight: 50;
+        line-height: 2rem;
+        letter-spacing: 0.2rem;
+        font-size: 1rem;
+        color: rgb(114, 75, 16);
+    
+    }
+
+    /* maps */
+    .tartalom {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 2rem;
+    
+        
+    }
+    
+    .tartalom .maps {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+    .tartalom .maps-szoveg   {
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-family: "Lora", serif;
+        font-weight: 50;
+        line-height: 2rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .szoveg {
+        display: none;
+    }
+
+    .tartalom2{
+        height: 50%;
+        margin-bottom: 3rem;
+    }
+
+    .tartalom2 .background-img-menu .img-menu{
+        content: url("imgs/table.jpg");
+    }
+    .orderfromus {
+        position: absolute;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .ordernow button{
+        margin-top: 60%;
+
+    }
+
+    iframe{
+        height: 300px;
+    }
+
+    
+}

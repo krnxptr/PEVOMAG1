@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    background-color: #e0dede;
+}
+
+section .fent {
+    width: 100%;
+}
+.fent{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    height: 10rem;
+    width: 100%;
+    transition: all 0.8s;
+    background: rgba(0,0,0, 70%);
+}
+
+.gheader-scrolled{
+    background: rgba(0,0,0, 70%) 
+    
+}
+
+/* .header-scrolled-back{
+    animation: fadeOut 1s;
+    
+} */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes fadeOut {
+  0% { background: rgba(0,0,0, 70%) }
+  100% { background: rgba(0,0,0, 0%) }
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    font-size: 150%;
+    letter-spacing: 0.13rem;
+  
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    padding: 2rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+header figure img {
+    height: 100%;
+    width: 12rem;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+header figure{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+}
+
+header figure h1{
+    color: black;
+    font-size: 3rem;
+    font-family: "Italiana", sans-serif;
+    margin: auto;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.social h5{
+    color: blue;
+    font-size: 150%;
+    letter-spacing: 0.22rem;
+    padding-bottom: 15%;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+footer .news form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer .news input{
+    width: 100%;
+    border: none;
+    padding: 9%;
+    margin: 5%;
+    color:black;
+}
+
+footer .news button{
+    width: 118%;
+    border: none;
+    color:black;
+    padding: 9%;
+    margin: 5%;
+}
+
+footer .news button:hover{
+    width: 120%;
+    border: none;
+    background-color: red;
+    color: black;
+    padding: 9%;
+    margin: 5%;
+}
+
+footer .news .gombi h1{
+    color: black;
+    font-size: 1rem;
+}
+
+footer .news .gombi:hover h1{
+    color:black;
+}
+
+footer .social{
+    text-align: center;
+
+}
+footer .social ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+footer .social ul li{
+    text-align: center;
+    padding: 0rem 2rem;
+}
+
+i{
+    font-size: 250%;
+    text-align: center;
+}
+footer .social ul li a{
+    color: rgb(255, 255, 255);
+}
+
+footer .social ul li a:hover{
+    color: red;
+}
+footer .news h4{
+    color: blue;
+    font-size: 1.4rem;
+}
+
+footer .news input, footer .news button{
+    border-radius: 3px;
+}
+/* body */
+
+.sec{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+section .background-img {
+    width: 100%;
+    overflow: hidden;
+    
+}
+section .background-img .img{
+    width: 100%;
+    filter: brightness(0.4);
+    animation: fadeIn 0s;
+
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+    color: #333;
+}
+
+.contact-description {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-textarea {
+    height: 150px;
+}
+
+.contact-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: red;
+    color:black;
+}
+
+.ek{
+    height: 15rem;
+}
+
+/*Gp*/
+
+/* Zoli CSS */
+
+/* A menüt alapvetően rejtjük */
+
+
+.hidden {
+    display: none;
+    padding: 0px, 0px;
+    transition: all 0.8s
+}  
+
+/* About menü stílusai */
+.about-menu {
+    list-style-type: none;
+    color:  rgb(187, 146, 12);
+    background: rgb(0, 0, 0,70%) ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Fő tengelyen való középre igazítás */
+    align-items: center; /* Átlós tengelyen való középre igazítás */
+    position: absolute;
+    transition: all 0.8s;
+    width: 100%;
+}
+.about-menu li a {
+    text-decoration: none;
+    color: rgb(187, 146, 12);
+}
+.about-menu li{
+    text-decoration: none;
+    color: rgb(187, 146, 12);
+    padding: 13px;
+}
+
+.about-menu li a:hover {
+    color: rgb(129, 102, 11);
+    padding: 0px, 0px;
+}
+.menu{
+    position: relative;
+}
+
+
+@media (max-width: 1024px){
+    .fent{
+        position: static;
+    }
+    header figure a img{
+        display: block;
+        margin: auto;
+    }
+    header{
+        display: block;
+        width: auto;
+        height: auto;
+        background: black;
+    }
+    header figure {
+        justify-content: center;
+    }
+
+    .gheader-scrolled{
+        background: rgba(0,0,0, 100%) 
+        
+    }
+    nav .menu{
+        margin-bottom: 2rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    header nav{
+        font-size: 100%;
+        letter-spacing: 0.13rem;
+        margin-right: 0rem;
+        margin-top: 1rem;
+    }
+    header nav ul li {
+        padding: .5rem;
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer .news{
+        padding-bottom: 5rem;
+        padding-top: 2rem;
+    }
+    footer .social{
+        padding-bottom: 2rem;
+    }
+    
+}
