@@ -430,16 +430,18 @@ header figure h1{
 }
 .about-menu li a {
     text-decoration: none;
-    color: rgb(187, 146, 12);
+    color: white;
+    text-align: center;
 }
 .about-menu li{
     text-decoration: none;
     color: rgb(187, 146, 12);
     padding: 13px;
+    text-align: center;
 }
 
 .about-menu li a:hover {
-    color: rgb(129, 102, 11);
+    color: red;
     padding: 0px, 0px;
 }
 .menu{
