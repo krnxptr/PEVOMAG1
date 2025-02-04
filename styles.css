@@ -560,7 +560,12 @@ section .background-img-menu .img-menu{
         letter-spacing: 0.2rem;
         margin-bottom: 3rem;
     }
-
+section .video .apple{
+		margin-left:-30px;
+        width: 100%;
+        height: auto;  /* Adjust as needed */
+        max-width: 100%; 
+	}
     .szoveg {
         display: none;
     }
@@ -583,7 +588,17 @@ section .background-img-menu .img-menu{
         margin-top: 60%;
 
     }
+.etlapGomb img {
+	
+    	height:40px;
+		width:50px;
+}
+     .ordernow button{
+        margin-top: 60%;
+		height:50px;
+		width:70px;
 
+    }
     iframe{
         height: 300px;
     }
