@@ -125,7 +125,7 @@ header figure h1{
 }
 .about-menu li a {
     text-decoration: none;
-    color: rgb(187, 146, 12);
+    color: white;
     text-align: center;
 }
 .about-menu li{
@@ -136,7 +136,7 @@ header figure h1{
 }
 
 .about-menu li a:hover {
-    color: rgb(129, 102, 11);
+    color: red;
     padding: 0px, 0px;
 }
 .menu{
@@ -560,7 +560,7 @@ section .background-img-menu .img-menu{
         letter-spacing: 0.2rem;
         margin-bottom: 3rem;
     }
-section .video .apple{
+	section .video .apple{
 		margin-left:-30px;
         width: 100%;
         height: auto;  /* Adjust as needed */
@@ -586,22 +586,16 @@ section .video .apple{
 
     .ordernow button{
         margin-top: 60%;
+		height:50px;
+		width:70px;
 
+    }
+
+    iframe{
+        height: 300px;
     }
 .etlapGomb img {
 	
     	height:40px;
 		width:50px;
-}
-     .ordernow button{
-        margin-top: 60%;
-		height:50px;
-		width:70px;
-
-    }
-    iframe{
-        height: 300px;
-    }
-
-    
 }
