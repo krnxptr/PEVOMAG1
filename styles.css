@@ -585,17 +585,17 @@ section .background-img-menu .img-menu{
     }
 
     .ordernow button{
-        margin-top: 60%;
-		height:50px;
-		width:70px;
-
+        size:5%;
+		padding:auto;
+		margin:auto;
+		
     }
 
     iframe{
         height: 300px;
     }
 .etlapGomb img {
-	
-    	height:40px;
-		width:50px;
+		size:10%;
+		margin:auto;
+    	
 }
