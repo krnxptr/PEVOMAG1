@@ -314,38 +314,66 @@
     </footer>
 </div>
     <div id="orderFormContainer" style="display:none;">
-
+   
         
-            <input class="submit"  type="button" onclick="submitclick()" value="Submit Order">
-            
-            
-        <h2>Your Cart</h2>
-  
-        <ul id="orderFormCartItems"></ul>
+            <div class="container">
+        <form action="">
+            <h1>
+                <i class="fas fa-shipping-fast"></i>
+                Shipping Details
+            </h1>
+            <div class="name">
+                <div>
+                    <label for="f-name">First</label>
+                    <input type="text" name="f-name">
+                </div>
+                <div>
+                    <label for="l-name">Last</label>
+                    <input type="text" name="l-name">
+                </div>
+            </div>
+            <div class="street">
+                <label for="name">Street</label>
+                <input type="text" name="address">
+            </div>
+            <div class="address-info">
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" name="city">
+                </div>
+                <div>
+                    <label for="state">State</label>
+                    <input type="text" name="state">
+                </div>
+                <div>
+                    <label for="zip">Zip</label>
+                    <input type="text" name="zip">
+                </div>
+            </div>
+            <h1>
+                <i class="far fa-credit-card"></i> Payment Information
+            </h1>
+            <div class="cc-num">
+                <label for="card-num">Credit Card No.</label>
+                <input type="text" name="card-num">
+            </div>
+            <div class="cc-info">
+                <div>
+                    <label for="card-num">Exp</label>
+                    <input type="text" name="expire">
+                </div>
+                <div>
+                    <label for="card-num">CCV</label>
+                    <input type="text" name="security">
+                </div>
+            </div>
+            <div class="btns">
+                <button onclick="alert('Redirecting to payment site')"value="Credit Card">Credit Card</button>
+                <button onclick="handleButtonClick()" value="Cash">Cash</button>
+				  <input class="submit" type="button" onclick="submitclick()" value="Submit Order">
+            </div>
         </form>
-         <br> <br>
-       
-        <div id="cartItems"></div>
-        
-            <div class="info">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-    
-            <label for="number">Phone number:</label>
-            <input type="phone number" id="number" name="number" required><br><br>
-    
-            <label for="name">Adress:</label>
-            <input type="adress" id="adress" name="adress" required><br><br>
-    
-           
-            <input class="cash" type="button" onclick="handleButtonClick()" value="Cash">
-            <input class="card" type="button" onclick="alert('Redirecting to payment site')" value="Credit card">
-    
-    
-            <br><br>
+    </div>
             
     </div>
         
