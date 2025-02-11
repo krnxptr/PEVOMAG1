@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 * {
-	background-color:white;
+	background-color:#b2d1ff;
     margin: 0;
     padding: 0;
     font-family: "Lora", serif;
@@ -14,23 +14,28 @@
 h1 {
     
     font-size: 40px;
-    color:goldenrod;
+    color:black;
     text-transform: uppercase;
 }
 
 .submit {
-    background:black;
-    color:white;
-    border: none;
-	border-radius:12%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    text-transform: uppercase;
-    padding: 2%;
-    margin: 5%;
-    margin-bottom: 0;
+     margin: 3px 0;
+        height: 30px;
+        width: 40%;
+        color: #cfc9e1;
+        background-color: #4a3b76;
+        text-transform: uppercase;
+        border: 0;
+		text-align:center;
+        border-radius: .3rem;
+        letter-spacing: 2px;
+
+        &:hover {
+            animation-name: btn-hov;
+            animation-duration: 550ms;
+            animation-fill-mode: forwards;
+        }
+    }
 }
 
 .info{
