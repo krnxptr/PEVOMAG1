@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-optical-sizing: auto;
     font-style: normal;
-
+	
 
 }
 html,
@@ -67,8 +67,8 @@ body {
     text-align: left;
 }
 .cash, .card{
-    background:goldenrod;
-    color:black;
+    background:black;
+    color:white;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -78,7 +78,7 @@ body {
     padding: 2%;
     margin: 5%;
     margin-bottom: 0;
-    border-radius: 10%;
+    border-radius: 12px;
     font-weight: 500;
 }
 
