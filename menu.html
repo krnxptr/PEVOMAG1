@@ -1,355 +1,868 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+    font-style: normal;
+	
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Menu</title>
-    <link rel="stylesheet" href="menu.css">
-    <script src="orders.js" defer></script>
-    <script src="https://kit.fontawesome.com/8d4c47a3aa.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-    </style>
-</head>
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
 
-<body>
-<div id="menuPage">
-    <section class="fent" id="test">
-        <header class="header" id="header">
-            <figure>
-                <a href="index.html"><img src="imgs/PEVOMAG logo.png" alt=""></a>
-            </figure>
+
+    #view-cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
     
-            <nav>
-                <ul class="menu">
-                    <li id="myDIV"><a href="menu.html" class="aaaa">Shop</a></li>
-                    <li><a href="aboutus.html">About us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div id="aboutMenu" class="hidden">
-                    <ul class="about-menu">
-                        <!-- <li><a href="#">All Menu</a></li> -->
-                         <li><a href="menu.html#MainD">Tablets</a></li>
-                        <li><a href="menu.html#desert">Laptops</a></li>
-                        <li><a href="menu.html#drinks">Phones</a></li>
-						<li><a href="menu.html#salads">Chargers</a></li>
-                    </ul>
-            </nav>
-        </header>
-    </section>
-    <div class="magassag"></div>
-
-    <div class="mainmenu">
-        <div class="shop">
-            <ul>
-                <li>
-                    <a href="#MainD"><img src="imgs/ipad.jpg" alt=""></a>
-                    <h2><a href="#MainD">Tablets</a></h2>
-                </li>
-				  
-                <li>
-                    <a href="#Garnier"> <img src="imgs/macbook.jpg" alt=""></a>
-                    <h2><a href="#Garnier">Laptops</a></h2>
-                </li>
-            </ul>
-        </div>
-		
-        <div class="shop">
-            <ul>
-                <li>
-                    <a href="#sos"><img src="imgs/iphone.jpg" alt=""></a>
-                    <h2><a href="#sos">Phones</a></h2>
-					 <section id="MainD"></section>
-                </li>
-                <li>
-                    <a href="#salad"><img src="imgs/charger.jpg" alt=""></a>
-                    <h2><a href="#salad">Chargers</a></h2>
-					
-
-                </li>
-            </ul>
-        </div>
-        
-    </div>
-
-    <!-- Your existing HTML content -->
-   <a href="#lastdiv"> <button id="view-cart-btn"><i class="fa-solid fa-cart-shopping fa-bounce"></i></button></a>
-
-
-    <div id="meniu">
-        <a href="#" class="top"><i class="fa-solid fa-arrow-up fa-beat"></i></a>
-        <div class="namedish">
-            <h2>Main Dishes</h2>
-        </div>
-
-        <div class="meniu-item">
-            <h2>Beef cheese burger</h2>
-            <p>Juicy beef patty topped with melted cheese in a soft bun - 6 eur</p>
-            <button onclick="addToCart('Beef cheese burger',6 )">Add to Cart</button>
-        </div>
-        <div class="meniu-item">
-            <h2>Vegan burger</h2>
-            <p>Plant-based patty with vegan cheese and toppings on a vegan bun - 6.5 eur</p>
-            <button onclick="addToCart('Vegan burger',6.5 )">Add to Cart</button>
-        </div>
-        <div class="meniu-item">
-            <h2>Filleted fish with tomato sauce</h2>
-            <p>Tender filleted fish cooked in a savory tomato sauce - 7 eur</p>
-            <button onclick="addToCart('Filleted fish',7 )">Add to Cart</button>
-        </div>
-        <div class="meniu-item">
-            <h2>Gypsy roast</h2>
-            <p>Hearty dish of roasted meats and vegetables with rich flavors - 6 eur</p>
-            <button onclick="addToCart('Gypsy roast',6 )">Add to Cart</button>
-        </div>
-        <div class="meniu-item">
-            <h2>Carbonara pasta</h2>
-            <p>Creamy pasta dish with bacon, eggs, and parmesan cheese - 6 eur</p>
-            <button onclick="addToCart('Carbonara',6)">Add to Cart</button>
-        </div>
-        <section id="Garnier"></section>
-        <div class="meniu-item">
-            <h2>Bolognese pasta</h2>
-            <p>Classic pasta dish with a rich tomato and meat sauce - 6 eur</p>
-            <button onclick="addToCart('Bolognese',6 )">Add to Cart</button>
-        </div>
-        <div class="meniu-item">
-            <h2>Chicken wrap</h2>
-            <p>Grilled chicken and fresh vegetables wrapped in a tortilla - 5.5 eur</p>
-            <button onclick="addToCart('Chicken wrap',5.5 )">Add to Cart</button>
-        </div>
-
-        <div class="namedish">
-            <h2>Garnishes</h2>
-        </div>
-        <div class="meniu-item">
-            <h2>Mashed potatoes</h2>
-            <p>Creamy mashed potatoes as a side dish - 3 eur</p>
-            <button onclick="addToCart('Mashed potatoes', 3)">Add to Cart</button>
-        </div>
-        <div class="meniu-item">
-            <h2>Cheesy fries</h2>
-            <p>Crispy fries topped with melted cheese - 3.5 eur</p>
-            <button onclick="addToCart('Cheesy fries', 3.5)">Add to Cart</button>
-        </div>
-        <div class="meniu-item">
-            <section id="sos"></section>
-            <h2>Mixed vegetables</h2>
-            <p>Assortment of fresh vegetables sautéed or roasted - 3.5 eur</p>
-            <button onclick="addToCart('Mixed vegetables', 3.5)">Add to Cart</button>
-        </div>
-        
-        <div class="meniu-item">
-            <h2>Sweet potatoes</h2>
-            <p>Roasted or mashed sweet potatoes as a side dish - 3 eur</p>
-            <button onclick="addToCart('Sweet potatoes', 3)">Add to Cart</button>
-        </div>
-    </div>
-    <div class="namedish">
-        <h2>Sauces</h2>
-    </div>
-    <div class="meniu-item">
-        <h2>Tomato sauce</h2>
-        <p> - 1 eur</p>
-        <button onclick="addToCart('Tomato sauce',1)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Mayonnise</h2>
-        <p> - 1 eur</p>
-        <button onclick="addToCart('Mayonnise',1)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Honey-mustard</h2> <section id="salad"></section>
-        <p> - 1 eur</p>
-        <button onclick="addToCart('Honey-mustard',1)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Garlic sauce</h2>
-       
-        <p> - 1 eur</p>
-        <button onclick="addToCart('Garlic sauce',1)">Add to Cart</button>
-    </div>
-    <div class="namedish">
-        <h2>Salads</h2>
-    </div>
-    <div class="meniu-item">
-        <h2>Caesar salad</h2>
-        <p>Crispy romaine lettuce with croutons, parmesan cheese, and Caesar dressing - 5 eur</p>
-        <button onclick="addToCart('Caesar salad', 5)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Greek salad</h2>
-        <p>Fresh cucumbers, tomatoes, olives, and feta cheese with a vinaigrette dressing - 5 eur</p>
-        <button onclick="addToCart('Greek salad', 5)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Panzanella</h2>
-        <p>Italian bread salad with tomatoes, cucumbers, and basil - 5.5 eur</p>
-        <button onclick="addToCart('Panzanella', 5.5)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Caprese</h2>
-        <section id="desert"></section>
-        <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze - 5 eur</p>
-        <button onclick="addToCart('Caprese', 5)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Garden salmon salad</h2>
-        <p>Grilled salmon on a bed of mixed greens with various toppings - 5.5 eur</p>
-        <button onclick="addToCart('Garden salmon salad', 5.5)">Add to Cart</button>
-    </div>
-
-    <div class="namedish">
-        <h2>Desserts</h2>
-    </div>
-    <div class="meniu-item">
-        <h2>Crepes</h2>
-        <p>Thin pancakes filled with sweet or savory fillings - 4.5 eur</p>
-        <button onclick="addToCart('Crepes', 4.5)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Fruit bowl</h2>
-        <p>Fresh assortment of seasonal fruits - 4 eur</p>
-        <button onclick="addToCart('Fruit bowl', 4)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Ice cream</h2>
-        <p>Scoop of creamy ice cream in various flavors - 3.5 eur</p>
-        <button onclick="addToCart('Ice cream', 3.5)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Chestnut puree with whipped cream</h2>
-        <p>Rich chestnut puree topped with fluffy whipped cream - 4 eur</p>
-        <button onclick="addToCart('Chestnut puree with whipped cream', 4)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Cheesecake</h2>
-        <section id="drinks"></section>
-        <p>Decadent creamy cheesecake with a graham cracker crust - 4.5 eur</p>
-        <button onclick="addToCart('Cheesecake', 4.5)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Panna Cotta</h2>
-        <p>Creamy Italian dessert made with gelatin and cream - 3 eur</p>
-        <button onclick="addToCart('Panna Cotta', 3)">Add to Cart</button>
-    </div>
-
-    <div class="namedish">
-        <h2>Drinks</h2>
-    </div>
-    <div class="meniu-item">
-        <h2>Refreshers (Pepsi, Fanta, Sprite…)</h2>
-        <p>Variety of soft drinks for refreshment - 2.5 eur</p>
-        <button onclick="addToCart('Refreshers', 2.5)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Cappuccino</h2>
-        <p>Espresso-based coffee drink topped with foamed milk - 3 eur</p>
-        <button onclick="addToCart('Cappuccino', 3)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Tinto de Verano</h2>
-        <p>Spanish summer drink made with red wine and lemon soda - 3 eur</p>
-        <button onclick="addToCart('Tinto de Verano', 3)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Mojitos (mango, strawberry, lemon)</h2>
-        <p>Classic cocktail made with rum, mint, sugar, soda, and various fruit flavors - 3.5 eur</p>
-        <button onclick="addToCart('Mojitos', 3.5)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Lemonade</h2>
-        <p>Freshly squeezed lemon juice with sweetener and water - 3 eur</p>
-        <button onclick="addToCart('Lemonade', 3)">Add to Cart</button>
-        <section id="lastdiv"></section>
-    </div>
-    <div class="meniu-item">
-        <h2>Beers</h2>
-        <p>Assortment of beers - 3 eur</p>
-        <button onclick="addToCart('Beer', 3)">Add to Cart</button>
-    </div>
-    <div class="meniu-item">
-        <h2>Red/White wine</h2>
-        <p>Selection of red and white wines for pairing with your meal - 3.5 eur</p>
-        <button onclick="addToCart('Red White wine', 3.5)">Add to Cart</button>
-        
-    </div>
-    </div>
-    </div>
-
-    <div id="cart">
-        <h2>Cart</h2>
-        <ul id="cart-items"></ul>
-        <button onclick="checkout()">Checkout</button>
-        <ul></ul>
-    </div>
-
-    <footer>
-        <div class="news">
-            <h4>Subscibe to our newsletter</h4>
-            <form action="">
-                <input type="text" placeholder="youremail@gmail.com" name="email">
-                <button class="gombi">
-                    <h1>Subscribe</h1>
-                </button>
-            </form>
-
-        </div>
-       
-        <div class="social">
-            <h5>Stay updated</h5>
-            <ul>
-                <li>
-                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/porsche/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                </li>
-                <li>
-                    <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</div>
-    <div id="orderFormContainer" style="display:none;">
-        <h1>Order online</h1> <br><br>
-        
-            <input class="submit"  type="button" onclick="submitclick()" value="Submit Order">
-            
-            
-        <h2>Your Cart</h2>
+}
+ 
   
-        <ul id="orderFormCartItems"></ul>
-        </form>
-         <br> <br>
-       
-        <div id="cartItems"></div>
-        
-            <div class="info">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-    
-            <label for="number">Phone number:</label>
-            <input type="phone number" id="number" name="number" required><br><br>
-    
-            <label for="name">Adress:</label>
-            <input type="adress" id="adress" name="adress" required><br><br>
-    
-           
-            <input class="cash" type="button" onclick="handleButtonClick()" value="Cash">
-            <input class="card" type="button" onclick="alert('Redirecting to payment site')" value="Credit card">
-    
-    
-            <br><br>
-            
-    </div>
-        
+  
 
-</body>
 
-</html>
+
+/* Existing CSS styles */
+
+
+/* Existing CSS styles */
+
+.submit {
+    background:goldenrod;
+    color:white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 2%;
+    margin: 5%;
+    margin-bottom: 0;
+}
+
+.info{
+    display: inline-block;
+    
+    clear: center;
+    width: 250px;
+    text-align: left;
+}
+
+.cards{
+    
+    display: inline-block;
+    
+    clear: center;
+    width: 250px;
+    text-align: left;
+}
+.cash, .card{
+    background:black;
+    color:white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 2%;
+    margin: 5%;
+    margin-bottom: 0;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.foodItem{
+    display: inline-block;
+    
+    clear: center;
+    width: 250px;
+    text-align: left;
+}   
+.magassag{
+    height: 10rem;
+}
+.mainmenu {
+    width: 100%;
+}
+
+.shop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.shop ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shop ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.mainmenu .shop ul li img{
+    width: 300px;
+    height: 300px;
+}
+.top {
+    --offset: 50px; 
+    
+    position: fixed;
+    bottom: 90px;
+    right: 27px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: white;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  /* ---------- Useful Button styling ---------- */
+
+
+  
+  .top:hover {
+    transition-duration: 0.1s;
+    background-color: black;
+  }
+  
+  .top:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+  
+  .top:active:after {
+    box-shadow: 0 0 0 0 black;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .button:active {
+    top: 1px;
+  }
+  
+  
+  
+
+  
+
+  
+  
+
+  
+  
+.shop a{
+    text-decoration: none;
+    color: black ;
+
+}
+.shop h2{
+    color:black ; 
+    font-size: 30px;
+}
+
+
+
+.namedish{
+    color: rgb(187, 146, 12);
+    margin: 10px;
+}
+
+.meniu-item button {
+    position: relative;
+    background-color: rgb(187, 146, 12);
+    border: none;
+    border-radius: 5%;
+    color: black;
+    
+    width: 150px;
+    height: 30px;
+    text-align: center; /* Align text to the center */
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    align-items: center;
+}
+
+  .meniu-item button:after {
+    content: "";
+    background: white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .meniu-item button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+h1 {
+    margin: 0;
+}
+.namedish{
+    border-bottom: 1px solid #ddd;
+    background-color: black;
+    width: 100%;
+    margin :0;
+}
+.namedish h2{
+    margin-left: 30px;
+}
+
+.meniu-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    
+}
+.meniu-item h2{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.meniu-item p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.meniu-item h2 {
+    margin-top: 0;
+}
+
+#cart {
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+#cart button{
+    color: black;
+    background-color: rgb(187, 146, 12);
+    border: none;
+    border-radius: 5%;
+    width: 150px;
+    height: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/*Csiap*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    background: #ffffff;
+}
+
+section .fent {
+    width: 100%;
+}
+.fent{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    height: 10rem;
+    width: 100%;
+    transition: all 0.8s;
+    background: rgba(0,0,0, 70%) ;
+}
+
+.gheader-scrolled{
+    background: rgba(0,0,0, 70%) 
+    
+}
+
+/* .header-scrolled-back{
+    animation: fadeOut 1s;
+    
+} */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes fadeOut {
+  0% { background: rgba(0,0,0, 70%) }
+  100% { background: rgba(0,0,0, 0%) }
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    font-size: 150%;
+    letter-spacing: 0.13rem;
+  
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    padding: 2rem;
+}
+
+header nav ul li a{
+        text-decoration: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header nav ul li a:hover{
+  text-decoration: none;
+    color: blue;
+}
+header figure img {
+    height: 100%;
+    width: 12rem;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+header figure{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+}
+
+header figure h1{
+    color: rgb(187, 146, 12);
+    font-size: 3rem;
+    font-family: "Italiana", sans-serif;
+    margin: auto;
+}
+
+
+
+/* Zoli CSS */
+
+/* A menüt alapvetően rejtjük */
+
+
+  .hidden {
+    display: none;
+    padding: 0px, 0px;
+    transition: all 0.8s
+}  
+
+/* About menü stílusai */
+.about-menu {
+    list-style-type: none;
+    color:  rgb(187, 146, 12);
+    background: rgb(0, 0, 0,70%) ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Fő tengelyen való középre igazítás */
+    align-items: center; /* Átlós tengelyen való középre igazítás */
+    position: absolute;
+    transition: all 0.8s;
+    width: 100%;
+}
+.about-menu li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.about-menu li{
+    text-decoration: none;
+    color: rgb(187, 146, 12);
+    padding: 13px;
+    text-align: center;
+}
+
+.about-menu li a:hover {
+    color: red;
+    padding: 0px, 0px;
+}
+.menu{
+    position: relative;
+}
+
+/**/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.social h5{
+     color: blue;
+    font-size: 150%;
+    letter-spacing: 0.22rem;
+    padding-bottom: 15%;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+footer .news form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer .news input{
+    width: 100%;
+    border: none;
+    padding: 9%;
+    margin: 5%;
+    color:blue;
+}
+
+footer .news button{
+   width: 118%;
+    border: none;
+    color:black;
+    color: white;
+    padding: 9%;
+    margin: 5%;
+}
+
+footer .news button:hover{
+    width: 120%;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 9%;
+    margin: 5%;
+}
+
+footer .news .gombi h1{
+     color: black;
+    font-size: 1rem;
+}
+
+footer .news .gombi:hover h1{
+   color: black;
+}
+
+footer .social{
+    text-align: center;
+
+}
+footer .social ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+footer .social ul li{
+    text-align: center;
+    padding: 0rem 2rem;
+}
+
+i{
+    font-size: 250%;
+    text-align: center;
+}
+footer .social ul li a{
+    color: rgb(255, 255, 255);
+}
+
+footer .social ul li a:hover{
+    color: red;
+}
+footer .news h4{
+     color: blue;
+    font-size: 1.4rem;
+}
+
+footer .news input, footer .news button{
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* body */
+
+.sec{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+.szoveg {
+    position: absolute;
+    margin: 25%;
+    margin-top: 30%;
+    color: white;
+    font-family: "Lora", serif;
+    text-align: center;
+}
+
+.szoveg h2{
+    font-family: "Lora", serif;
+    font-weight: 50;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+
+}
+
+section .background-img {
+    width: 100%;
+    overflow: hidden;
+    
+}
+section .background-img .img{
+    width: 100%;
+    filter: brightness(0.4);
+    animation: fadeIn 0s;
+
+}
+
+.tartalom {
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+
+    
+}
+
+.tartalom .maps {
+    width: 180%;
+    justify-content: center;
+}
+.tartalom .maps-szoveg   {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    font-family: "Lora", serif;
+    font-weight: 50;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+}
+/* tartalom2 */
+
+.tartalom2{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.orderfromus {
+    position: absolute;
+    text-align: center;
+    margin-top: 12rem;
+}
+
+.orderfromus h1 {
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+    font-family: "Lora", serif;
+    letter-spacing: 0.25rem;
+    font-weight: 100;
+}
+
+
+section .background-img-menu {
+    width: 100%;
+    overflow: hidden;
+    
+}
+section .background-img-menu .img-menu{
+    width: 100%;
+    filter: brightness(0.7);
+    animation: fadeIn 0s;
+
+}
+
+/**/
+
+.ordernow {
+    position: absolute;
+    color: white;
+    font-family: "Lora", serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.ordernow button{
+    font-family: "Lora", serif;
+    font-weight: 50;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem ;
+    width: 12rem;
+    margin-top: 160%;
+    background:rgb(187, 146, 12);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+.ordernow button:hover{
+    color: rgb(187, 146, 12);
+    background: white;
+
+}
+
+.ordernowgomb span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .ordernowgomb span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+  }
+  
+  .ordernowgomb:hover span {
+    padding-right: 25px;
+  }
+  
+  .ordernowgomb:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.etlapGomb{
+    font-size: 1.4rem;
+}
+
+
+@media (max-width: 1024px){
+    .fent{
+        position: static;
+    }
+    header figure a img{
+        display: block;
+        margin: auto;
+    }
+    header{
+        display: block;
+        width: auto;
+        height: auto;
+        background: black;
+    }
+    header figure {
+        justify-content: center;
+    }
+
+    .gheader-scrolled{
+        background: rgba(0,0,0, 100%) 
+        
+    }
+    nav .menu{
+        margin-bottom: 2rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    header nav{
+        font-size: 100%;
+        letter-spacing: 0.13rem;
+        margin-right: 0rem;
+        margin-top: 1rem;
+    }
+    header nav ul li {
+        padding: .5rem;
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer .news{
+        padding-bottom: 5rem;
+        padding-top: 2rem;
+    }
+    footer .social{
+        padding-bottom: 2rem;
+    }
+
+
+
+    .szoveg {
+        position: absolute;
+        margin: 15%;
+        margin-top: 66%;
+        color: white;
+        font-family: "Lora", serif;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .szoveg h2{
+        font-family: "Lora", serif;
+        font-weight: 50;
+        line-height: 2rem;
+        letter-spacing: 0.2rem;
+        font-size: 1rem;
+        color: rgb(114, 75, 16);
+    
+    }
+
+    /* maps */
+    .tartalom {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 2rem;
+    
+        
+    }
+    
+    .tartalom .maps {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+    .tartalom .maps-szoveg   {
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-family: "Lora", serif;
+        font-weight: 50;
+        line-height: 2rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .szoveg {
+        display: none;
+    }
+
+    .tartalom2{
+        height: 50%;
+        margin-bottom: 3rem;
+    }
+
+    .tartalom2 .background-img-menu .img-menu{
+        content: url("imgs/menu-kep-telefon.png");
+    }
+    .orderfromus {
+        position: absolute;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .ordernow button{
+        margin-top: 60%;
+
+    }
+
+    iframe{
+        height: 300px;
+    }
+
+    .mainmenu .shop ul{
+        flex-direction: column;
+    }
+}
+
+#cart button{
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+#cart {
+    padding: rem;
+}
