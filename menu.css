@@ -354,11 +354,11 @@ button:focus {
 
 .meniu-item button {
     position: relative;
-    background-color: rgb(187, 146, 12);
+    background-color:black;
     border: none;
     border-radius: 5%;
-    color: black;
-    
+    color: white;
+    margin-top:10px;
     width: 150px;
     height: 30px;
     text-align: center; /* Align text to the center */
