@@ -412,6 +412,7 @@ h1 {
 .meniu-item h2{
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color:white;
 }
 .meniu-item p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -419,6 +420,7 @@ h1 {
 
 .meniu-item h2 {
     margin-top: 0;
+	
 }
 
 #cart {
