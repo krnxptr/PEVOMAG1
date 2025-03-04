@@ -95,18 +95,39 @@ function addToCart(itemName, price) {
 
 function updateCart() {
     const cartList = document.getElementById('cart-items');
-
+    const checkoutSection = document.getElementById('checkout-section'); // Assuming you have a section for checkout
+    
+    // Clear the existing cart list
     cartList.innerHTML = '';
+    
     let totalPrice = 0;
+
+    // Loop through the cart items and add them to the list
     cartItems.forEach(item => {
         const listItem = document.createElement('li');
         listItem.textContent = `${item.name} - $${item.price}`;
         cartList.appendChild(listItem);
         totalPrice += item.price;
     });
+    
+    // Move total above the button
+    const totalText = document.createElement('p');
+    totalText.textContent = `Total: $${totalPrice}`;
+	
+      totalText.style.fontSize = '24px';  // Increase font size
+    totalText.style.fontWeight = 'bold'; // Make it bolder
+    totalText.style.marginBottom = '10px'; 
+    // Add the total text above the button
+    if (checkoutSection) {
+        checkoutSection.innerHTML = ''; // Clear any previous content (if necessary)
+        checkoutSection.appendChild(totalText);
+    }
+
+    // Modify the button text
     const checkoutButton = document.querySelector('#cart button');
-    checkoutButton.textContent = `Checkout - Total: $${totalPrice}`;
+    checkoutButton.textContent = 'Checkout';
 }
+
 
 function checkout() {
     document.getElementById('menuPage').style.display = 'none';
@@ -137,15 +158,28 @@ function checkout() {
 // Add this function to update the order form
 function updateOrderForm() {
     const orderFormCartItems = document.getElementById('orderFormCartItems');
-    let totalyPrice = 0;
-    orderFormCartItems.innerHTML = '';
+    let totalPrice = 0;
+    
+    // Calculate total price
     cartItems.forEach(item => {
-        const listItem = document.createElement('li');
-        listItem.textContent = `${item.name} - $${item.price}`;
-        orderFormCartItems.appendChild(listItem);
-        totalyPrice += item.price;
+        totalPrice += item.price;
     });
+
+    // Clear previous content
+    orderFormCartItems.innerHTML = '';
+
+    // Create a new element to display the total price
+    const totalPriceElement = document.createElement('p');
+    totalPriceElement.textContent = `Your Total: $${totalPrice}`;
+
+    // Optionally, style the total price text
+    totalPriceElement.style.fontSize = '20px';  // Example: make the text a bit bigger
+    totalPriceElement.style.fontWeight = 'bold'; // Example: make it bold
+
+    // Append the total price to the container
+    orderFormCartItems.appendChild(totalPriceElement);
 }
+
 
 
 document.getElementById('addToCartBtn').addEventListener('click', function() {
