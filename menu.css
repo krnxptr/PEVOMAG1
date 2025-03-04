@@ -59,7 +59,7 @@ $title: #493b76;
 }
 
 .container {
-    width: 65%;
+
     padding: 5% 10%;
 }
 
@@ -139,26 +139,46 @@ form {
 .btns {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
 
-    button {
-        margin: 3px 0;
-        height: 30px;
-        width: 40%;
-        color: #cfc9e1;
-        background-color: #4a3b76;
-        text-transform: uppercase;
-        border: 0;
-        border-radius: .3rem;
-        letter-spacing: 2px;
-
-        &:hover {
-            animation-name: btn-hov;
-            animation-duration: 550ms;
-            animation-fill-mode: forwards;
-        }
-    }
+    align-items: center; /* Change from flex-end to center to center-align the buttons */
+    justify-content: center; /* Center the items vertically if needed */
+    height: 100%; /* Ensure the container takes up full height (optional) */
 }
+
+
+.btns button {
+    margin: 10px 0; /* Adjust margin for better spacing */
+    height: 40px; /* Increase button height for better usability */
+    width: 30%; /* Adjust width to suit your design */
+    color: #cfc9e1;
+    background-color: #4a3b76;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .3rem;
+    letter-spacing: 2px;
+    font-size: 16px; /* Increase font size for better readability */
+}
+
+.btns button:hover {
+    animation-name: btn-hov;
+    animation-duration: 550ms;
+    animation-fill-mode: forwards;
+}
+
+.submit {
+    margin-top: 10px;
+	 margin: 10px 0; /* Adjust margin for better spacing */
+    height: 40px; /* Increase button height for better usability */
+    width: 30%; /* Adjust width to suit your design */
+    color: #cfc9e1;
+    background-color: #4a3b76;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .3rem;
+    letter-spacing: 2px;
+    font-size: 16px; /* Increase font size for better readability */
+}
+
 
 @keyframes btn-hov {
     100% {
@@ -354,11 +374,11 @@ button:focus {
 
 .meniu-item button {
     position: relative;
-    background-color:black;
+    background-color: black;
     border: none;
     border-radius: 5%;
     color: white;
-    margin-top:10px;
+    margin-top:50px;
     width: 150px;
     height: 30px;
     text-align: center; /* Align text to the center */
@@ -374,6 +394,7 @@ button:focus {
 
   .meniu-item button:after {
     content: "";
+	
     background: white;
     display: block;
     position: absolute;
@@ -407,12 +428,13 @@ h1 {
 .meniu-item {
     border-bottom: 1px solid #ddd;
     padding: 20px;
+	overflow:auto;
+	
     
 }
 .meniu-item h2{
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	
 }
 .meniu-item p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -420,7 +442,6 @@ h1 {
 
 .meniu-item h2 {
     margin-top: 0;
-	
 }
 
 #cart {
@@ -433,8 +454,8 @@ h1 {
     padding: 0;
 }
 #cart button{
-    color: black;
-    background-color: rgb(187, 146, 12);
+    color: white;
+    background-color: black;
     border: none;
     border-radius: 5%;
     width: 150px;
