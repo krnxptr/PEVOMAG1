@@ -232,9 +232,7 @@ function handleButtonClick() {
   alert('Your order will be paid with cash');
   }
   
-function submitclick()
-{ alert('Thank you for yor order!');
-window.location.reload();
-
+function submitclick() {
+    alert('Thank you for your order!');
+    window.location.href = 'menu.html';
 }
-
