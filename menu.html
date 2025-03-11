@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="orders.js" defer></script>
+    <script src="https://kit.fontawesome.com/8d4c47a3aa.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+    </style>
+</head>
+
+<body>
+<div id="menuPage">
+    <section class="fent" id="test">
+        <header class="header" id="header">
+            <figure>
+                <a href="index.html"><img src="imgs/PEVOMAG logo.png" alt=""></a>
+            </figure>
+    
+            <nav>
+                <ul class="menu">
+                    <li id="myDIV"><a href="menu.html" class="aaaa">Shop</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div id="aboutMenu" class="hidden">
+                    <ul class="about-menu">
+                        <!-- <li><a href="#">All Menu</a></li> -->
+                         <li><a href="menu.html#MainD">Tablets</a></li>
+                        <li><a href="menu.html#desert">Laptops</a></li>
+                        <li><a href="menu.html#drinks">Phones</a></li>
+						<li><a href="menu.html#salads">Chargers</a></li>
+                    </ul>
+            </nav>
+        </header>
+    </section>
+    <div class="magassag"></div>
+
+    <div class="mainmenu">
+        <div class="shop">
+            <ul>
+                <li>
+                    <a href="#MainD"><img src="imgs/ipad.jpg" alt=""></a>
+                    <h2><a href="#MainD">Tablets</a></h2>
+                </li>
+				  
+                <li>
+                    <a href="#Garnier"> <img src="imgs/macbook.jpg" alt=""></a>
+                    <h2><a href="#Garnier">Laptops</a></h2>
+                </li>
+            </ul>
+        </div>
+		
+        <div class="shop">
+            <ul>
+                <li>
+                    <a href="#sos"><img src="imgs/iphone.jpg" alt=""></a>
+                    <h2><a href="#sos">Phones</a></h2>
+					 <section id="MainD"></section>
+                </li>
+                <li>
+                    <a href="#salad"><img src="imgs/charger.jpg" alt=""></a>
+                    <h2><a href="#salad">Chargers/PowerBanks</a></h2>
+					
+
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- Your existing HTML content -->
+   <a href="#lastdiv"> <button id="view-cart-btn"><i class="fa-solid fa-cart-shopping fa-bounce"></i></button></a>
+
+
+    <div id="meniu">
+        <a href="#" class="top"><i class="fa-solid fa-arrow-up fa-beat"></i></a>
+        <div class="namedish">
+            <h2>Tablets</h2>
+        </div>
+<div id="meniu-container">
+    
+</div>
+
+        <div class="meniu-item">
+            <h2>Apple iPad Pro 12.9 (2022)</h2>
+            <p>Plant-based patty with vegan cheese and toppings on a vegan bun - 6.5 eur</p>
+            <button onclick="addToCart('Apple iPad Pro 12.9 (2022)',6.5 )">Add to Cart</button>
+        </div>
+        <div class="meniu-item">
+            <h2>Filleted fish with tomato sauce</h2>
+            <p>Tender filleted fish cooked in a savory tomato sauce - 7 eur</p>
+            <button onclick="addToCart('Filleted fish',7 )">Add to Cart</button>
+        </div>
+        <div class="meniu-item">
+            <h2>Gypsy roast</h2>
+            <p>Hearty dish of roasted meats and vegetables with rich flavors - 6 eur</p>
+            <button onclick="addToCart('Gypsy roast',6 )">Add to Cart</button>
+        </div>
+        <div class="meniu-item">
+            <h2>Carbonara pasta</h2>
+            <p>Creamy pasta dish with bacon, eggs, and parmesan cheese - 6 eur</p>
+            <button onclick="addToCart('Carbonara',6)">Add to Cart</button>
+        </div>
+        <section id="Garnier"></section>
+        <div class="meniu-item">
+            <h2>Bolognese pasta</h2>
+            <p>Classic pasta dish with a rich tomato and meat sauce - 6 eur</p>
+            <button onclick="addToCart('Bolognese',6 )">Add to Cart</button>
+        </div>
+        <div class="meniu-item">
+            <h2>Chicken wrap</h2>
+            <p>Grilled chicken and fresh vegetables wrapped in a tortilla - 5.5 eur</p>
+            <button onclick="addToCart('Chicken wrap',5.5 )">Add to Cart</button>
+        </div>
+
+        <div class="namedish">
+            <h2>Garnishes</h2>
+        </div>
+        <div class="meniu-item">
+            <h2>Mashed potatoes</h2>
+            <p>Creamy mashed potatoes as a side dish - 3 eur</p>
+            <button onclick="addToCart('Mashed potatoes', 3)">Add to Cart</button>
+        </div>
+        <div class="meniu-item">
+            <h2>Cheesy fries</h2>
+            <p>Crispy fries topped with melted cheese - 3.5 eur</p>
+            <button onclick="addToCart('Cheesy fries', 3.5)">Add to Cart</button>
+        </div>
+        <div class="meniu-item">
+            <section id="sos"></section>
+            <h2>Mixed vegetables</h2>
+            <p>Assortment of fresh vegetables sautéed or roasted - 3.5 eur</p>
+            <button onclick="addToCart('Mixed vegetables', 3.5)">Add to Cart</button>
+        </div>
+        
+        <div class="meniu-item">
+            <h2>Sweet potatoes</h2>
+            <p>Roasted or mashed sweet potatoes as a side dish - 3 eur</p>
+            <button onclick="addToCart('Sweet potatoes', 3)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="namedish">
+        <h2>Sauces</h2>
+    </div>
+    <div class="meniu-item">
+        <h2>Tomato sauce</h2>
+        <p> - 1 eur</p>
+        <button onclick="addToCart('Tomato sauce',1)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Mayonnise</h2>
+        <p> - 1 eur</p>
+        <button onclick="addToCart('Mayonnise',1)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Honey-mustard</h2> <section id="salad"></section>
+        <p> - 1 eur</p>
+        <button onclick="addToCart('Honey-mustard',1)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Garlic sauce</h2>
+       
+        <p> - 1 eur</p>
+        <button onclick="addToCart('Garlic sauce',1)">Add to Cart</button>
+    </div>
+    <div class="namedish">
+        <h2>Salads</h2>
+    </div>
+    <div class="meniu-item">
+        <h2>Caesar salad</h2>
+        <p>Crispy romaine lettuce with croutons, parmesan cheese, and Caesar dressing - 5 eur</p>
+        <button onclick="addToCart('Caesar salad', 5)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Greek salad</h2>
+        <p>Fresh cucumbers, tomatoes, olives, and feta cheese with a vinaigrette dressing - 5 eur</p>
+        <button onclick="addToCart('Greek salad', 5)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Panzanella</h2>
+        <p>Italian bread salad with tomatoes, cucumbers, and basil - 5.5 eur</p>
+        <button onclick="addToCart('Panzanella', 5.5)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Caprese</h2>
+        <section id="desert"></section>
+        <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze - 5 eur</p>
+        <button onclick="addToCart('Caprese', 5)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Garden salmon salad</h2>
+        <p>Grilled salmon on a bed of mixed greens with various toppings - 5.5 eur</p>
+        <button onclick="addToCart('Garden salmon salad', 5.5)">Add to Cart</button>
+    </div>
+
+    <div class="namedish">
+        <h2>Desserts</h2>
+    </div>
+    <div class="meniu-item">
+        <h2>Crepes</h2>
+        <p>Thin pancakes filled with sweet or savory fillings - 4.5 eur</p>
+        <button onclick="addToCart('Crepes', 4.5)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Fruit bowl</h2>
+        <p>Fresh assortment of seasonal fruits - 4 eur</p>
+        <button onclick="addToCart('Fruit bowl', 4)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Ice cream</h2>
+        <p>Scoop of creamy ice cream in various flavors - 3.5 eur</p>
+        <button onclick="addToCart('Ice cream', 3.5)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Chestnut puree with whipped cream</h2>
+        <p>Rich chestnut puree topped with fluffy whipped cream - 4 eur</p>
+        <button onclick="addToCart('Chestnut puree with whipped cream', 4)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Cheesecake</h2>
+        <section id="drinks"></section>
+        <p>Decadent creamy cheesecake with a graham cracker crust - 4.5 eur</p>
+        <button onclick="addToCart('Cheesecake', 4.5)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Panna Cotta</h2>
+        <p>Creamy Italian dessert made with gelatin and cream - 3 eur</p>
+        <button onclick="addToCart('Panna Cotta', 3)">Add to Cart</button>
+    </div>
+
+    <div class="namedish">
+        <h2>Drinks</h2>
+    </div>
+    <div class="meniu-item">
+        <h2>Refreshers (Pepsi, Fanta, Sprite…)</h2>
+        <p>Variety of soft drinks for refreshment - 2.5 eur</p>
+        <button onclick="addToCart('Refreshers', 2.5)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Cappuccino</h2>
+        <p>Espresso-based coffee drink topped with foamed milk - 3 eur</p>
+        <button onclick="addToCart('Cappuccino', 3)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Tinto de Verano</h2>
+        <p>Spanish summer drink made with red wine and lemon soda - 3 eur</p>
+        <button onclick="addToCart('Tinto de Verano', 3)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Mojitos (mango, strawberry, lemon)</h2>
+        <p>Classic cocktail made with rum, mint, sugar, soda, and various fruit flavors - 3.5 eur</p>
+        <button onclick="addToCart('Mojitos', 3.5)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Lemonade</h2>
+        <p>Freshly squeezed lemon juice with sweetener and water - 3 eur</p>
+        <button onclick="addToCart('Lemonade', 3)">Add to Cart</button>
+        <section id="lastdiv"></section>
+    </div>
+    <div class="meniu-item">
+        <h2>Beers</h2>
+        <p>Assortment of beers - 3 eur</p>
+        <button onclick="addToCart('Beer', 3)">Add to Cart</button>
+    </div>
+    <div class="meniu-item">
+        <h2>Red/White wine</h2>
+        <p>Selection of red and white wines for pairing with your meal - 3.5 eur</p>
+        <button onclick="addToCart('Red White wine', 3.5)">Add to Cart</button>
+        
+    </div>
+    </div>
+    </div>
+
+    <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+		 <div id="checkout-section">
+		 </div>
+        <button onclick="checkout()">Checkout</button>
+
+    </div>
+
+    <footer>
+        <div class="news">
+            <h4>Subscibe to our newsletter</h4>
+            <form action="">
+                <input type="text" placeholder="youremail@gmail.com" name="email">
+                <button class="gombi">
+                    <h1>Subscribe</h1>
+                </button>
+            </form>
+
+        </div>
+       
+        <div class="social">
+            <h5>Stay updated</h5>
+            <ul>
+                <li>
+                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/porsche/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+  <div id="orderFormContainer" style="display:none;">
+    <div class="container">
+        <form id="orderForm">
+            <h1><i class="fas fa-shipping-fast"></i> Shipping Details</h1>
+            <div class="name">
+                <div>
+                    <label for="f-name">First</label>
+                    <input type="text" name="f-name" required>
+                </div>
+                <div>
+                    <label for="l-name">Last</label>
+                    <input type="text" name="l-name" required>
+                </div>
+            </div>
+            <div class="street">
+                <label for="address">Street</label>
+                <input type="text" name="address" required>
+            </div>
+            <div class="address-info">
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" name="city" required>
+                </div>
+                <div>
+                    <label for="state">State</label>
+                    <input type="text" name="state" required>
+                </div>
+                <div>
+                    <label for="zip">Zip</label>
+                    <input type="text" name="zip" required>
+                </div>
+            </div>
+            <h1><i class="far fa-credit-card"></i> Payment Information</h1>
+            <div class="cc-num">
+                <label for="card-num">Credit Card No.</label>
+                <input type="text" name="card-num" required>
+            </div>
+            <div class="cc-info">
+                <div>
+                    <label for="expire">Exp</label>
+                    <input type="text" name="expire" required>
+                </div>
+                <div>
+                    <label for="security">CCV</label>
+                    <input type="text" name="security" required>
+                </div>
+            </div>
+        
+        </form>
+   <div id="orderFormCartItems"> 
+   
+   </div>
+</div>
+
+            <div class="btns">
+                <button onclick="alert('Redirecting to payment site')"value="Credit Card">Credit Card</button>
+                <button onclick="handleButtonClick()" value="Cash">Cash</button>
+				  <input class="submit" type="button" onclick="submitclick()" value="Submit">
+            </div>
+        </form>
+		 </div>
+    </div>
+            
+    </div>
+        
+
+</body>
+
+</html>
