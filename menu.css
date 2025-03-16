@@ -26,7 +26,7 @@ body {
     
 }
  @import url('https://fonts.googleapis.com/css?family=Arimo');
-$coral: #eb9478;
+$coral: #eb9478 ;
 $maroon: #8e2807;
 $title: #493b76;
 
@@ -84,7 +84,7 @@ form {
         letter-spacing: .15rem;
         font-family: "Arimo";
         margin-top: 5px;
-        color: $maroon;
+        color: maroon;
         border-radius: 4px;
 		border-color:black;
     }
@@ -93,13 +93,13 @@ form {
         text-transform: uppercase;
         font-size: 12px;
         letter-spacing: 2px;
-        color: $maroon;
+        color: maroon;
     }
 
     h1 {
         font-size: 24px;
         line-height: 10px;
-        color: $title;
+        color: title;
         letter-spacing: 1px;
     }
 
