@@ -87,35 +87,26 @@
 </div>
 
        <div class="menu">
-        <?php foreach ($allProducts as $product): ?>
+        
             <div class="menu-item">
-                <h2><?php echo htmlspecialchars($product['name']); ?></h2>
-                <p><?php echo htmlspecialchars($product['description']) . " - " . htmlspecialchars($product['price']) . " eur"; ?></p>
-                <button onclick="addToCart('<?php echo addslashes($product['name']); ?>', <?php echo $product['price']; ?>)">Add to Cart</button>
+                
             </div>
-        <?php endforeach; ?>
+        
     </div>
         
 
         <div class="namedish">
-            <h2>Garnishes</h2>
+            <h2>Phones</h2>
         </div>
       
     <div class="namedish">
-        <h2>Sauces</h2>
+        <h2>Chargers/Powerbanks</h2>
     </div>
     
     <div class="namedish">
-        <h2>Salads</h2>
+        <h2>Tablets</h2>
      </div>
-    <div class="namedish">
-        <h2>Desserts</h2>
-    </div>
-  
-
-    <div class="namedish">
-        <h2>Drinks</h2>
-    </div>
+    
     
         
    
