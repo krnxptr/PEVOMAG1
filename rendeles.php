@@ -16,10 +16,14 @@ if (isset($_POST['g1'])) {
     $insert = "INSERT INTO shipping_details (First, Last, Street, City, State, Zip, `Credit card no.`, Exp, CVV) 
                VALUES ('$f_nev', '$k_nev', '$address', '$city', '$state', '$zip', '$credit_card_no', '$exp', '$CVV')";
 
-    if (mysqli_query($hiba, $insert)) {
-        echo "A rendelést rögzítettük!";
-		echo '<script src="orders.js"></script>';	
-		echo '<input class="vissza" type="button" onclick="submitclick()" value="vissza">';
+if (mysqli_query($hiba, $insert)) {
+    echo "<h1>A rendelést rögzítettük!</h1>";
+    echo '<script src="orders.js"></script>';    
+    echo '<link rel="stylesheet" href="orders.css">';
+    echo '<br>';
+    echo '<br>';
+    echo '<br>';
+    echo '<input class="vissza" type="button" onclick="submitclick()" value="Back to the menu page">';
 
 
     } else {
