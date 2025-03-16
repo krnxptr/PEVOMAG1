@@ -7,8 +7,9 @@
 }
 
 body{
-    background-color: #e0dede;
+    background-color: #fdfcfc;
 }
+
 
 section .fent {
     width: 100%;
@@ -28,7 +29,7 @@ header {
     height: 10rem;
     width: 100%;
     transition: all 0.8s;
-    background: rgba(0,0,0, 70%);
+    background: rgba(0,0,0, 70%) ;
 }
 
 .gheader-scrolled{
@@ -69,10 +70,11 @@ header nav ul li{
 header nav ul li a{
     text-decoration: none;
     color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 header nav ul li a:hover{
     text-decoration: none;
-    color: white;
+    color: blue;
 }
 header figure img {
     height: 100%;
@@ -90,7 +92,7 @@ header figure{
 }
 
 header figure h1{
-    color: black;
+    color: rgb(187, 146, 12);
     font-size: 3rem;
     font-family: "Italiana", sans-serif;
     margin: auto;
@@ -107,7 +109,7 @@ footer{
 }
 
 .social h5{
-    color: blue;
+    color:blue;
     font-size: 150%;
     letter-spacing: 0.22rem;
     padding-bottom: 15%;
@@ -137,6 +139,7 @@ footer .news button{
     width: 118%;
     border: none;
     color:black;
+    color: white;
     padding: 9%;
     margin: 5%;
 }
@@ -156,7 +159,7 @@ footer .news .gombi h1{
 }
 
 footer .news .gombi:hover h1{
-    color:black;
+    color: black;
 }
 
 footer .social{
@@ -217,101 +220,75 @@ section .background-img .img{
 
 }
 
-.contact-container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-title {
-    color: #333;
-}
-
-.contact-description {
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.contact-input,
-.contact-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.contact-textarea {
-    height: 150px;
-}
-
-.contact-button {
-    width: 100%;
-    padding: 10px;
-    background-color: black;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-button:hover {
-    background-color: red;
-    color:black;
-}
-
 .ek{
     height: 15rem;
 }
 
-/*Gp*/
 
-/* Zoli CSS */
+/*gp-abt*/
 
-/* A menüt alapvetően rejtjük */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
+/* About Section */
 
-.hidden {
-    display: none;
-    padding: 0px, 0px;
-    transition: all 0.8s
-}  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-/* About menü stílusai */
-.about-menu {
-    list-style-type: none;
-    color:  rgb(187, 146, 12);
-    background: rgb(0, 0, 0,70%) ;
-    display: flex;
-    flex-direction: column;
+/* About Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 0;
+}
+
+.section-title {
     text-align: center;
-    justify-content: center; /* Fő tengelyen való középre igazítás */
-    align-items: center; /* Átlós tengelyen való középre igazítás */
-    position: absolute;
-    transition: all 0.8s;
-    width: 100%;
-}
-.about-menu li a {
-    text-decoration: none;
-    color: rgb(187, 146, 12);
-}
-.about-menu li{
-    text-decoration: none;
-    color: rgb(187, 146, 12);
-    padding: 13px;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
 }
 
-.about-menu li a:hover {
-    color: rgb(129, 102, 11);
-    padding: 0px, 0px;
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.menu{
-    position: relative;
+
+.about-text {
+    flex: 1;
+    padding-right: 40px;
+    padding-left: 40px;
 }
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Reverse layout for the second about-content */
 
 
 @media (max-width: 1024px){
@@ -367,4 +344,62 @@ section .background-img .img{
         padding-bottom: 2rem;
     }
     
+
+    /*gp-abt*/
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .about-image {
+        margin-top: 30px;
+    }
+}
+
+/* Zoli CSS */
+
+/* A menüt alapvetően rejtjük */
+
+
+.hidden {
+    display: none;
+    padding: 0px, 0px;
+    transition: all 0.8s
+}  
+
+/* About menü stílusai */
+.about-menu {
+    list-style-type: none;
+    color:  rgb(187, 146, 12);
+    background: rgb(0, 0, 0,70%) ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Fő tengelyen való középre igazítás */
+    align-items: center; /* Átlós tengelyen való középre igazítás */
+    position: absolute;
+    transition: all 0.8s;
+    width: 100%;
+}
+.about-menu li a {
+    text-decoration: none;
+    color: rgb(187, 146, 12);
+}
+.about-menu li{
+    text-decoration: none;
+    color: rgb(187, 146, 12);
+    padding: 13px;
+}
+
+.about-menu li a:hover {
+    color: rgb(129, 102, 11);
+    padding: 0px, 0px;
+}
+.menu{
+    position: relative;
 }
